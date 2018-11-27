@@ -14,7 +14,7 @@ class EmpleadoController extends Controller
     public function index()
     {
         $empleados= Empleado::paginate();
-        $title = 'Listado de empleados';
+        $title = 'Listado de equipos';
         
         /*return view('empleados',[
             'empleados => $empleados'

@@ -19,21 +19,35 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 Route::group(['middleware'=>'auth'],function(){
 
+    // RUTAS PARA LOS EMPLEADOS 
+
+    // Lista en general
     Route::get('empleados', 'EmpleadoController@index')->name('empleados.index');
     
+    // Para actualizar
     Route::get('empleados/{empleado}/editar', 'EmpleadoController@edit')->name('empleados.edit');
     Route::put('empleados/{empleado}', 'EmpleadoController@update');
     
+    // Para crear
     Route::get('empleados/nuevo', 'EmpleadoController@create')->name('empleados.create');
+    // Envia los datos del formulario
     Route::post('empleados/crear', 'EmpleadoController@store')->name('empleados.store');
     
+    // Mostrar uno en especifico
     Route::get('empleados/{empleado}/show', 'EmpleadoController@show')->name('empleados.show');
     
+    // Eliminar
     Route::delete('empleados/{empleado}','EmpleadoController@destroy')->name('empleados.destroy');
 
-    Route::get('ubicacion','UbicacionController@index');
-    
+    // Generar reporte
     Route::get('empleados/generate-pdf', 'EmpleadoController@generatePDF')->name('empleados.generatepdf');
+
+    // Route::get('ubicacion','UbicacionController@index');
+
+    //----------------------------------------------------------------------------------------------------
+
+    Route::get('equipos', '');
+   
 });
 
 // Route::get('/contacto', function(){
