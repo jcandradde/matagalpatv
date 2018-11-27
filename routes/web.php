@@ -15,6 +15,8 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('/home', 'HomeController@index')->name('home');
+
 Route::group(['middleware'=>'auth'],function(){
 
     Route::get('empleados', 'EmpleadoController@index')->name('empleados.index');
@@ -34,13 +36,13 @@ Route::group(['middleware'=>'auth'],function(){
     Route::get('empleados/generate-pdf', 'EmpleadoController@generatePDF')->name('empleados.generatepdf');
 });
 
-Route::get('/contacto', function(){
-    return view('contacto');
-});
+// Route::get('/contacto', function(){
+//     return view('contacto');
+// });
 
-Route::get('/hola/{id?}', function($id=null){
-   return "hola {$id}"; 
-});
+// Route::get('/hola/{id?}', function($id=null){
+//    return "hola {$id}"; 
+// });
 
 
 Route::get('auth/login','Auth\AuthController@getLogin');
@@ -50,4 +52,4 @@ Route::get('auth/register','Auth\AuthController@getResgister');
 Route::post('auth/register','Auth\AuthController@postResgister');
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
+
