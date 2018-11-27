@@ -16,7 +16,8 @@
                 <th>Telefono</th>
                 <th>Correo</th>
                 <th>Sexo</th>
-                <th>Num INSS</th>
+                <th>Num INS</th>
+                
             </tr>
         </thead>
         <tbody>
