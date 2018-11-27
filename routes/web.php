@@ -46,7 +46,26 @@ Route::group(['middleware'=>'auth'],function(){
 
     //----------------------------------------------------------------------------------------------------
 
-    Route::get('equipos', '');
+    // Lista en general
+    Route::get('equipos', 'EquipoController@index')->name('equipos.index');
+
+    // Para actualizar
+    Route::get('equipos/{equipo}/editar', 'EquipoController@edit')->name('equipos.edit');
+    Route::put('equipos/{equipo}', 'EquipoController@update');
+
+    // Para crear
+    Route::get('equipos/nuevo', 'EquipoController@create')->name('equipos.create');
+    // Envia los datos del fomrulario
+    Route::post('equipos/crear', 'EquipoContorller@store')->name('equipos.store');
+
+    // Mostrar uno en especifico
+    Route::get('equipos/{equipo}/show', 'EquipoController@show')->name('equipos.show');
+    
+    // Eliminar
+    Route::delete('equipos/{equipo}','EquipoController@destroy')->name('equipos.destroy');
+
+    // Generar reporte
+    Route::get('equipos/generate-pdf', 'EquipoController@generatePDF')->name('equipos.generatepdf'); 
    
 });
 

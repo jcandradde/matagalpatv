@@ -8,8 +8,6 @@ class Equipo extends Model
 {
     protected $table = 'Equipo';
     
-    protected $fillable = ['p_nombre','s_nombre', 'p_apellido', 's_apellido', 'fecha_nacimiento', 'cedula', 'telefono', 'correo_e', 'sexo', 'num_inss'];
-    
-    //
-    
+    protected $fillable = ['modelo','numero_serie', 'estado_fisico', 'id_marca', 'id_categoria', 'id_ubicacion'];
+
 }
