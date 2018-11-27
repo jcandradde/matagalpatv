@@ -1,0 +1,8 @@
+{
+    "jscodehints.detectedExclusions": [
+        "C:/xampp7/htdocs/Laravel/webpack.mix.js",
+        "C:/xampp7/htdocs/Laravel/public/js/app.js",
+        "C:/xampp7/htdocs/Laravel/vendor/symfony/var-dumper/Resources/js/htmlDescriptor.js",
+        "C:/xampp7/htdocs/Laravel/vendor/phpunit/php-code-coverage/src/Report/Html/Renderer/Template/js/popper.min.js"
+    ]
+}
