@@ -7,7 +7,7 @@
    @endif
    <hr>
    <div class="text-right">
-   <a class="button btn-primary btn-lg" href="{{route('empleados.create')}}">Nuevo Empleado</a>
+   <a class="button btn-primary btn-lg" href="{{route('empleados.create')}}">Nuevo Equipo</a>
    </div>
    <br>
    <div class="table-responsive">
