@@ -66,22 +66,69 @@
         </style>
     </head>
     <body>
+    </nav>
+        <div class="container-fluid">
+        <div class="row">
+            <nav class="col-md-2 d-none d-md-block bg-light sidebar">
+            <div class="sidebar-sticky">
+                <ul class="nav flex-column">
+                <li class="nav-item">
+                    <a class="nav-link active" href="{{url('/home')}}">
+                    <i class="fa fa-home"></i>
+                    Inicio <span class="sr-only">(current)</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{url('/empleados')}}">
+                    <i class="fa fa-user"></i>
+                    Empleados
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+                    <i class="fa fa-tv"></i>
+                    Equipos
+                    </a>
+                </li>
+                <hR></hR>         
+
+                <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+                <span>Saved reports</span>
+                <a class="d-flex align-items-center text-muted" href="#">
+                    <i class="fa fa-circle"></i>
+                </a>
+                </h6>
+                <ul class="nav flex-column mb-2">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+                    <i class="fa fa-file"></i>
+                    Current month
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+                    <i class="fa fa-cube"></i>
+                    Last quarter
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+                    <span data-feather="file-text"></span>
+                    Social engagement
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+                    <span data-feather="file-text"></span>
+                    Year-end sale
+                    </a>
+                </li>
+                </ul>
+            </div>
+            </nav>
        @section('content')
         <div class="flex-center position-ref full-height">
-            <div class="content">
-                <div class="title m-b-md">
-                    Laravel 5
-                </div>
 
-                <div class="links">
-                    <a href="https://laravel.com/docs">Documentation</a>
-                    <a href="https://laracasts.com">Laracasts</a>
-                    <a href="https://laravel-news.com">News</a>
-                    <a href="https://nova.laravel.com">Nova</a>
-                    <a href="https://forge.laravel.com">Forge</a>
-                    <a href="https://github.com/laravel/laravel">GitHub</a>
-                </div>
-            </div>
         </div>
       @endsection
     </body>

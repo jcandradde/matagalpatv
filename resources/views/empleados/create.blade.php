@@ -1,7 +1,7 @@
 @extends('layout')
 
 @section('content')
-    <h1>Editar empleado</h1>
+    <h1>Nuevo empleado</h1>
     <hr>
 
     @if($errors->any())

@@ -83,4 +83,7 @@
   'font awesome 5 free' => array(
     'normal' => $fontDir . '\6e84bda8e336124d03c455057e21d80b',
   ),
+  'nunito' => array(
+    'normal' => $fontDir . '\474f10b76136d401d855594aedc55e83',
+  ),
 ) ?>
